@@ -1,0 +1,19 @@
+{
+    "name": "Hello World",
+    "description": "Hello World Plugin",
+    "version": "1.0.0",
+    "requires": "1.0.0",
+    "author": "Marc",
+    "license": "GPLv3",
+    "link": "https://www.leafpub.org/",
+    "isAdminPlugin": true,
+    "isMiddleware": false,
+    "image": "",
+    "routes": [
+        {
+            "method": "GET",
+            "uri": "/test",
+            "cb": "Leafpub\\Plugins\\ExamplePlugin\\Plugin::say"
+        }
+    ]
+}

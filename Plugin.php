@@ -14,12 +14,12 @@ use Leafpub\Leafpub,
     Leafpub\Events\Application\Startup;
 
 class Plugin extends APlugin {
+    /* If we overwrite __construct we MUST call parent::__construct
     public function __construct($app){
         parent::__construct($app);
-        $this->setOptions(__DIR__);
-        //$this->listenTo();
+        $this->listenTo();
     }
-
+    */
     private function listenTo(){
         Leafpub::on(Startup::NAME, function($evt){
             echo('Hello World');

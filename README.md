@@ -53,12 +53,12 @@ use Leafpub\Leafpub, //optional
     Leafpub\Events\Application\Startup; //optional
 
 class Plugin extends APlugin {
+    /* Overwriting the standarnd constructor is optional
     public function __construct($app){
-        parent::__construct($app);
-        $this->setOptions(__DIR__);
+        parent::__construct($app);   
         //$this->listenTo();
     }
-
+    */
     private function listenTo(){
         Leafpub::on(Startup::NAME, function($evt){
             echo('Hello World');
